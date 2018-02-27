@@ -14,9 +14,6 @@ app.secret_key = "jose"
 api = Api(app)  # Can easily add resources to this "app"
 
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
 
 
 """
